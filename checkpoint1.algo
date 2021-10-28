@@ -1,0 +1,25 @@
+ALGORITHM checkpoint1
+VAR
+
+    mots: INTEGER := 1 ;
+    voyelles: INTEGER:=0;
+    ch : STRING;
+    i : INTEGER;
+    chr : INTEGER :=0;
+BEGIN
+    read (ch)
+    FOR i FROM 0 TO ch.length-1 STEP 1  DO
+    IF ( ch[i]=' ') THEN  
+    mots= mots+1
+    END IF 
+    IF( ch [i] = "A" or ch [i] = "a" or ch [i] = "E" or ch [i] = "e" or ch [i] = "U" or ch [i] = "i" or ch [i] = "O" or ch [i] = "o" or )
+    voyelles = voyelles+1
+    END IF
+    IF( ch[i]=<>' ')
+    chr = chr + 1 
+    END IF
+    END_FOR
+    WRITE ('the number of words is' ,mots);
+    WRITE ('the number of vowels is' , voyelles);
+    WRITE ( 'the number of CHAR is' chr) ;
+END
